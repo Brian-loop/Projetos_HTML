@@ -1,0 +1,22 @@
+
+.corzinha{
+    color: red;
+    background-color: blue;
+    font-size: 30px;
+}
+h1{
+    color:blue;
+}
+p{
+    color:white;
+    background-color: tomato;
+    font-size: 30px;        
+}
+img{
+    height: 400px;
+    width: 400px;
+    background-color: blueviolet;
+    object-fit: contain;      /*para que a imagem se encaixe no tamanho*/
+    border: 10px solid black;  /*borda da imagem*/
+    border-radius: 15%;      /*borda arredondada*/
+}
