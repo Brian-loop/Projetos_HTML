@@ -1,0 +1,78 @@
+<!DOCTYPE html> 
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aula 03</title>
+</head>
+<style>
+    .texto{         /* chamando class de texto */
+        background-color: tomato;
+        color: aliceblue;
+        font-size: 30px;
+    }
+</style>
+<body>
+    <h1>Aula de JS</h1> 
+    
+    <p class="texto" id="textoPersonalizado">Aqui vai meu texto personalizado</p>     <!--texto personalizado, colocamos em uma classe-->
+    <p>aqui não pode mudar o texto...</p>
+
+
+
+    <script>   // Codigo javascript aqui dentro
+        // Variáveis javascript não são tipadas    
+        console.log('AQUI EU TENHO UM TEXTO TOP!')    
+        console.log(1+1)
+        numero = 1
+        texto = 'oi'
+        numeroQuebrado = 2.0
+        verdadeiroFalso = false
+
+        console.log(numero, texto, numeroQuebrado, verdadeiroFalso)
+        console.log(8 + parseInt('2')) //Exemplo de conversão de string para inteiro
+        // Operadores logicos
+        console.log(1 == 1) //true
+        console.log(1 == 2) //false
+
+        if (1 == 1) { // comparação de igualdade
+            console.log('Estou dentro do if')
+        } else if (2 == 2) {
+            console.log('Estou dentro do else if')
+        }else { // se não for nenhuma das opções acima
+            console.log('Estou dentro do else')
+        }
+
+        for (i = 0; i < 10; i++) {
+            console.log('valor de i: ' + i)
+        }
+        contador = 1
+        while (contador < 10) { // loop while
+            contador++
+            console.log('valor do contador: ' + contador) // imprime o valor do contador
+            if (contador == 7) {
+                continue  //volta para o inicio do loop     
+            }
+            if (contador == 5) {
+                break //sai do loop
+            }
+
+        }        
+        function funcaoTop() {    // function é uma palavra reservada para criar funções
+            alert('Minha função funcionou!!!')
+        }
+        //funcaoTop() //chama a função
+        function adicionarTexto() {
+            alert('Deseja adicionar texto?')
+            //console.log(document.getElementById('textoPersonalizdo').innerHTML)
+            // -DOM --> DOCUMENT OBJECT MODEL
+            textoLocal = document.getElementById('textoPersonalizdo').innerHTML
+            console.log(textoLocal)
+
+            document.getElementById('textoPersonalizdo').innerHTML = 'Um texto do balacubaco' // altera o texto do elemento com id 'textoPersonalizado'
+        }                            
+        alert('deseja continuar?') // caixa de alerta      
+        // Fim do codigo javascript
+    </script>    
+</body>
+</html>
