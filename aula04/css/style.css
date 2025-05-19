@@ -1,0 +1,37 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Special+Gothic&display=swap');      /*importa a fonte do google fonts*/
+
+/*@import url('../font/SpecialGothic-Regular.ttf'); /*fonte baixada do google fonts*/
+@font-face {
+    font-family: 'Special Gothic';/*nome da fonte*/
+    src: url('../font/SpecialGothic-Regular.ttf');/*localização da fonte*/
+}
+*{  /* "*{}" É tudo*/
+    margin: 0;/*tiramos para a margem padrão do navegador*/
+}
+.fundo{
+    /*usamos a "url" para localizar a imagem nos meus arquivos, 
+    "." serve para vermos o arquivo de onde estamos, ".."serve para vermos o arquivo anterior*/
+    background-image: url('../img/astronauta-bebendo-cerveja.jpg');/*imagem como fundo*/
+    background-position: center;/*centraliza a imagem*/
+    background-size: cover;/*tamanho da imagem*/
+    height: 100vh;/*altura da tela, "vh"*/
+    align-content: center;/*alinhamento do conteúdo*/
+    /*align-items: center;           /*alinhamento do conteúdo*/
+}
+.titulo{
+    color: black;/*cor do texto*/
+    text-align: center;/*centraliza o texto*/
+    /*background-color: tomato;/*cor de fundo do texto*/
+    font-size: 50px;/*tamanho da fonte*/
+    font-family: 'Special Gothic';/*tipo da fonte*/
+    font-weight: 700;/*peso(grossura) da fonte*/
+    font-style: regular;/*estilo da fonte*/
+
+
+
+
+
+
+
+
+}
