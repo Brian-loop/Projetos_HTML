@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+}
+
+.box{
+    width: 100%; /*é o tamanho da caixa*/
+    height: 100%;
+    background-color: rgb(111, 0, 255);
+    color: white;
+    margin: 10px;
+    text-align: center; /*alinha o texto no centro da caixa*/
+    align-content: center; /*alinha o conteudo no centro da caixa*/
+    
+}
+.container{
+    padding: 0 15%; /*adiciona um padding de 15% nas laterais*/
+    width: 70vw; /*define a largura do container como 70% da largura da viewport*/
+}
+
+.grid{
+    display: grid; /*define que o container é um grid*/
+    gap: 10px; /*define o espaçamento entre as caixas*/
+    
+    /*grid-template-columns: 1fr 1fr 1fr; /*define 3 colunas de tamanho igual*/    /*repeat(3, 300px) significa que serão criadas 3 colunas com 300px de largura cada uma*/
+    /*grid-template-rows: repeat(4, 200px); /*define 3 linhas de tamanho igual*/
+    
+    /* row-gap: 10px; /*define o espaçamento entre as linhas*/
+    /* column-gap: 10px; /*define o espaçamento entre as colunas*/
+}
+
+.linha {
+    grid-template-rows: repeat(4, 200px); /*define 4 linhas de tamanho igual*/
+}
+.coluna {
+    grid-template-columns: 1fr 1fr 1fr;  /*1fr significa que as colunas terão tamanhos iguais, ocupando todo o espaço disponível*/
+}
+.coluna-2 {
+    grid-template-columns: 1fr 2fr;
+}
+.coluna-3 {
+    grid-template-columns: 2fr 1fr;
+}
+
+
+
+
+
+
+
+
+.box:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    
+}
+
+
