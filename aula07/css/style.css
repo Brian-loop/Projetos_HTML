@@ -91,7 +91,7 @@
 .produtos figure{
     height: 380px;
     width: 220px;
-    background-color: brown;
+    background-color: rgb(173, 163, 163);
 }
 .produtos figure>img{
     width: 100%;
